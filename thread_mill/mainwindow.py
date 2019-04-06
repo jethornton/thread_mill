@@ -7,6 +7,8 @@ from qtpyvcp.widgets.form_widgets.main_window import VCPMainWindow
 import os
 current_path = os.path.dirname(os.path.realpath(__file__)) + '/'
 
+from math import sqrt as sqrt
+
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel, QSqlQuery
 from PyQt5.QtWidgets import QDataWidgetMapper
 
@@ -109,7 +111,7 @@ class MyMainWindow(VCPMainWindow):
         self.sizeMapper.setModel(self.sizeModel)
         self.sizeMapper.addMapping(self.threadSizeLbl, 0, b'text')
         self.sizeMapper.addMapping(self.threadPitchLbl, 1, b'text')
-        self.sizeMapper.addMapping(self.nominalMajorDiaLbl, 2, b'text')
+        self.sizeMapper.addMapping(self.threadMajorDiaLbl, 2, b'text')
         self.sizeMapper.addMapping(self.minMajorDiaLbl, 3, b'text')
         self.sizeMapper.addMapping(self.maxMinorDiaLbl, 4, b'text')
         self.sizeMapper.addMapping(self.minMinorDiaLbl, 5, b'text')
@@ -119,6 +121,7 @@ class MyMainWindow(VCPMainWindow):
         self.sizeLast = self.sizeMapper.currentIndex()
         self.sizeMapper.setCurrentIndex(index)
         self.drillSizeInit()
+        self.threadSizeCalc()
 
 
     def threadSizeFwd(self):
@@ -127,6 +130,7 @@ class MyMainWindow(VCPMainWindow):
         else:
             self.sizeMapper.toFirst()
         self.drillSizeInit()
+        self.threadSizeCalc()
 
     def threadSizeBack(self):
         if self.sizeMapper.currentIndex() != 0:
@@ -134,6 +138,31 @@ class MyMainWindow(VCPMainWindow):
         else:
             self.sizeMapper.toLast()
         self.drillSizeInit()
+        self.threadSizeCalc()
+
+    def threadSizeCalc(self):
+        # PDO calculations
+        threadMajorDia = float(self.threadMajorDiaLbl.text())
+        drillDia = float(self.drillDiaLbl.text())
+        standardPDO = threadMajorDia - drillDia
+        self.sptmThreadingPDOLbl.setText('{:.04f}'.format(standardPDO))
+        # Actual thread height = 1/2 PDO
+        threadHeightStandard = standardPDO / 2
+        self.threadHeightStdLbl.setText('{:.04f}'.format(threadHeightStandard))
+        threadTrangleHeight = threadHeightStandard / 0.625
+        self.threadTriangleHeightLbl.setText('{:.04f}'.format(threadTrangleHeight))
+        threadPushOutAdj = threadTrangleHeight * 0.125
+        self.threadPushOutAdjLbl.setText('{:.04f}'.format(threadPushOutAdj))
+        threadPDOAdjustOut = threadPushOutAdj * 2
+        self.threadPDOAdjustOutLbl.setText('{:.04f}'.format(threadPDOAdjustOut))
+        # -2*(Crest*(SQRT(3)/2))
+        sptmCrest = float(self.sptmCrestLbl.text())
+        threadPDOCrestAdj = -2 * (sptmCrest * (sqrt(3)/2))
+        self.threadPDOCrestAdjLbl.setText('{:.04f}'.format(threadPDOCrestAdj))
+        finalPDO = standardPDO + threadPDOAdjustOut + threadPDOCrestAdj
+        self.threadFinalPDOLbl.setText('{:.04f}'.format(finalPDO))
+
+
 
     def sptmSizeInit(self):
         self.sptmMapper = QDataWidgetMapper(self)
@@ -224,6 +253,7 @@ class MyMainWindow(VCPMainWindow):
             self.drillMapper.toFirst()
         self.sptmCalc()
         self.threadPercent()
+        self.threadSizeCalc()
 
     def drillSizeBack(self):
         if self.drillMapper.currentIndex() != 0:
@@ -232,9 +262,10 @@ class MyMainWindow(VCPMainWindow):
             self.drillMapper.toLast()
         self.sptmCalc()
         self.threadPercent()
+        self.threadSizeCalc()
 
     def threadPercent(self):
-        majorDia = float(self.nominalMajorDiaLbl.text())
+        majorDia = float(self.threadMajorDiaLbl.text())
         minorDia = float(self.drillDiaLbl.text())
         # note for metric convert to TPI
         threadPitch = float(self.threadPitchLbl.text())

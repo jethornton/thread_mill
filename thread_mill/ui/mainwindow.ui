@@ -230,7 +230,7 @@
      <item row="1" column="0">
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Nominal Major Dia</string>
+        <string>Major Dia</string>
        </property>
       </widget>
      </item>
@@ -311,7 +311,7 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLabel" name="nominalMajorDiaLbl">
+      <widget class="QLabel" name="threadMajorDiaLbl">
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -708,6 +708,164 @@
     <property name="text">
      <string>&gt;</string>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="gridGroupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>330</y>
+      <width>231</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Single Point Threading Info</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_9">
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>Thread Height</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="threadPushOutAdjLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="threadTriangleHeightLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="threadHeightStdLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>PDO Adj Out</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="threadFinalPDOLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="sptmThreadingPDOLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>Final PDO</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string>PDO</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_22">
+       <property name="text">
+        <string>Triangle Height</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_23">
+       <property name="text">
+        <string>Push Out Adj</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="threadPDOAdjustOutLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="threadPDOCrestAdjLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_24">
+       <property name="text">
+        <string>PDO Crest Adj</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
