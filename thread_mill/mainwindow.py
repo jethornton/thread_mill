@@ -161,6 +161,11 @@ class MyMainWindow(VCPMainWindow):
         self.threadPDOCrestAdjLbl.setText('{:.04f}'.format(threadPDOCrestAdj))
         finalPDO = standardPDO + threadPDOAdjustOut + threadPDOCrestAdj
         self.threadFinalPDOLbl.setText('{:.04f}'.format(finalPDO))
+        # if final PDO is greater than tip height check
+        if self.sptmTipHeight > finalPDO:
+            self.sptmTipOkLbl.setText('OK')
+        else:
+            self.sptmTipOkLbl.setText('Tip Too Small')
 
 
 
@@ -202,7 +207,8 @@ class MyMainWindow(VCPMainWindow):
         else:
             self.sptmDiaOkLbl.setText('TOO BIG!')
         sptmNeckDia = float(self.sptmNeckDiaLbl.text())
-        self.sptmTipHeightLbl.setText('{:.4f}'.format(sptmCutterDia - sptmNeckDia))
+        self.sptmTipHeight = sptmCutterDia - sptmNeckDia
+        self.sptmTipHeightLbl.setText('{:.4f}'.format(self.sptmTipHeight))
 
     def testSql(self):
         self.testQuery = QSqlQuery()
