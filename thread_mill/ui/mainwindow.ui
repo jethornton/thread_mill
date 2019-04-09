@@ -30,7 +30,7 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>9</y>
+      <y>4</y>
       <width>125</width>
       <height>88</height>
      </rect>
@@ -75,7 +75,7 @@
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>10</y>
+      <y>5</y>
       <width>125</width>
       <height>88</height>
      </rect>
@@ -120,7 +120,7 @@
     <property name="geometry">
      <rect>
       <x>275</x>
-      <y>10</y>
+      <y>5</y>
       <width>125</width>
       <height>88</height>
      </rect>
@@ -165,8 +165,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>105</y>
-      <width>266</width>
+      <y>100</y>
+      <width>201</width>
       <height>211</height>
      </rect>
     </property>
@@ -179,6 +179,12 @@
     <layout class="QGridLayout" name="gridLayout_4">
      <item row="3" column="1">
       <widget class="QLabel" name="maxMinorDiaLbl">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -193,26 +199,32 @@
      <item row="3" column="0">
       <widget class="QLabel" name="label_8">
        <property name="text">
-        <string>Maximum Minor Dia</string>
+        <string>Max Minor Dia</string>
        </property>
       </widget>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_5">
        <property name="text">
-        <string>Minimum Major Dia</string>
+        <string>Min Major Dia</string>
        </property>
       </widget>
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Minimum Minor Dia</string>
+        <string>Min Minor Dia</string>
        </property>
       </widget>
      </item>
      <item row="6" column="1">
       <widget class="QLabel" name="minPitchDiaLbl">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -236,6 +248,12 @@
      </item>
      <item row="4" column="1">
       <widget class="QLabel" name="minMinorDiaLbl">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -250,12 +268,18 @@
      <item row="5" column="0">
       <widget class="QLabel" name="label_9">
        <property name="text">
-        <string>Maximum Pitch Dia</string>
+        <string>Max Pitch Dia</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLabel" name="threadPitchLbl">
+      <widget class="QLabel" name="threadTPILbl">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -270,12 +294,18 @@
      <item row="6" column="0">
       <widget class="QLabel" name="label_11">
        <property name="text">
-        <string>Minimum Pitch Dia</string>
+        <string>Min Pitch Dia</string>
        </property>
       </widget>
      </item>
      <item row="5" column="1">
       <widget class="QLabel" name="maxPitchDiaLbl">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -293,12 +323,18 @@
      <item row="0" column="0">
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>Thread Pitch</string>
+        <string>TPI</string>
        </property>
       </widget>
      </item>
      <item row="2" column="1">
       <widget class="QLabel" name="minMajorDiaLbl">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -312,6 +348,12 @@
      </item>
      <item row="1" column="1">
       <widget class="QLabel" name="threadMajorDiaLbl">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -328,8 +370,8 @@
    <widget class="QGroupBox" name="gridGroupBox_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>10</y>
+      <x>420</x>
+      <y>5</y>
       <width>125</width>
       <height>88</height>
      </rect>
@@ -373,8 +415,8 @@
    <widget class="QGroupBox" name="gridGroupBox_3">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>120</y>
+      <x>555</x>
+      <y>100</y>
       <width>231</width>
       <height>206</height>
      </rect>
@@ -548,58 +590,13 @@
      </item>
     </layout>
    </widget>
-   <widget class="QGroupBox" name="gridGroupBox_4">
-    <property name="geometry">
-     <rect>
-      <x>315</x>
-      <y>110</y>
-      <width>125</width>
-      <height>88</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Drill Diameter</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <layout class="QGridLayout" name="gridLayout_7">
-     <item row="2" column="1">
-      <widget class="QPushButton" name="drillSizeFwdBtn">
-       <property name="text">
-        <string>Fwd</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="drillSizeBackBtn">
-       <property name="text">
-        <string>Back</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0" colspan="2">
-      <widget class="QLabel" name="drillDiaLbl">
-       <property name="frameShape">
-        <enum>QFrame::Box</enum>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QGroupBox" name="gridGroupBox_5">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>205</y>
-      <width>166</width>
-      <height>106</height>
+      <x>395</x>
+      <y>100</y>
+      <width>151</width>
+      <height>146</height>
      </rect>
     </property>
     <property name="title">
@@ -609,7 +606,14 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_8">
-     <item row="1" column="1">
+     <item row="4" column="0">
+      <widget class="QPushButton" name="drillSizeBackBtn">
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
       <widget class="QLabel" name="drillSizeLbl">
        <property name="frameShape">
         <enum>QFrame::Box</enum>
@@ -622,21 +626,21 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="0">
+     <item row="1" column="0">
       <widget class="QLabel" name="label_15">
        <property name="text">
         <string>Drill Type</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="2" column="0">
       <widget class="QLabel" name="label_12">
        <property name="text">
         <string>Drill Size</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
+     <item row="1" column="1">
       <widget class="QLabel" name="drillTypeLbl">
        <property name="frameShape">
         <enum>QFrame::Box</enum>
@@ -649,14 +653,14 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
+     <item row="3" column="0">
       <widget class="QLabel" name="label_16">
        <property name="text">
         <string>Thread</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
+     <item row="3" column="1">
       <widget class="QLabel" name="threadPercentLbl">
        <property name="frameShape">
         <enum>QFrame::Box</enum>
@@ -669,26 +673,53 @@
        </property>
       </widget>
      </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="drillSizeFwdBtn">
+       <property name="text">
+        <string>Fwd</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="drillDiaLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_26">
+       <property name="text">
+        <string>Size</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="testBtn">
+   <widget class="QPushButton" name="genGcodeBtn">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>500</y>
-      <width>82</width>
+      <x>220</x>
+      <y>515</y>
+      <width>96</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Test Button</string>
+     <string>Build G code</string>
     </property>
    </widget>
    <widget class="QLabel" name="testLbl">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>470</y>
+      <x>30</x>
+      <y>525</y>
       <width>166</width>
       <height>21</height>
      </rect>
@@ -706,8 +737,8 @@
    <widget class="QPushButton" name="testBackBtn">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>530</y>
+      <x>220</x>
+      <y>545</y>
       <width>36</width>
       <height>23</height>
      </rect>
@@ -719,8 +750,8 @@
    <widget class="QPushButton" name="testFwdBtn">
     <property name="geometry">
      <rect>
-      <x>555</x>
-      <y>530</y>
+      <x>265</x>
+      <y>545</y>
       <width>36</width>
       <height>23</height>
      </rect>
@@ -733,8 +764,8 @@
     <property name="geometry">
      <rect>
       <x>15</x>
-      <y>330</y>
-      <width>231</width>
+      <y>325</y>
+      <width>196</width>
       <height>191</height>
      </rect>
     </property>
@@ -882,6 +913,382 @@
       <widget class="QLabel" name="label_24">
        <property name="text">
         <string>PDO Crest Adj</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="gridGroupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>330</y>
+      <width>171</width>
+      <height>176</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Passes</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_10">
+     <item row="5" column="1">
+      <widget class="QSpinBox" name="numPassesSP">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_30">
+       <property name="text">
+        <string>Percent</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_29">
+       <property name="text">
+        <string>Dia</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="passPercentLbl_1">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="passDiaLbl_0">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_35">
+       <property name="text">
+        <string>Pass</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_36">
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_37">
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_38">
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_39">
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="passDiaLbl_1">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="passDiaLbl_2">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="passDiaLbl_3">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="passPercentLbl_2">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="passPercentLbl_3">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="passPercentLbl_4">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextEdit" name="gcodeText">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>315</y>
+      <width>376</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="acceptRichText">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveFilePb">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>515</y>
+      <width>56</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gridGroupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>265</y>
+      <width>81</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Threads</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_11">
+     <item row="0" column="0">
+      <widget class="QSpinBox" name="threadCountSb">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>25</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="gridGroupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>105</y>
+      <width>106</width>
+      <height>86</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Hole Dia</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_12">
+     <item row="0" column="0">
+      <widget class="QDoubleSpinBox" name="holeDiaSb">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="singleStep">
+        <double>0.001000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="threadPerLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="gridGroupBox_10">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>190</y>
+      <width>106</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Pitch Dia</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_13">
+     <item row="0" column="0">
+      <widget class="QDoubleSpinBox" name="pitchDiaSb">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="singleStep">
+        <double>0.001000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="gridGroupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>5</y>
+      <width>146</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Feed Rate Calculator</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_7">
+     <item row="0" column="1">
+      <widget class="QLabel" name="circularFeedLbl">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="linearFeedSb"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_27">
+       <property name="text">
+        <string>Linear</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_28">
+       <property name="text">
+        <string>Circular</string>
        </property>
       </widget>
      </item>
