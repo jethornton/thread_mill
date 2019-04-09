@@ -174,8 +174,12 @@ class MyMainWindow(VCPMainWindow):
             self.sptmTipOkLbl.setText('OK')
         else:
             self.sptmTipOkLbl.setText('Tip Too Small')
-
-
+        # set maximum number of threads
+        threadTPI = float(self.threadTPILbl.text())
+        threadPitch = 1.0 / threadTPI
+        maxDepth = float(self.sptmMaxDepthLbl.text())
+        maxThreads = int(maxDepth / threadPitch)
+        self.threadCountSb.setMaximum(maxThreads)
 
     def sptmSizeInit(self):
         self.sptmMapper = QDataWidgetMapper(self)
