@@ -32,7 +32,7 @@
       <x>5</x>
       <y>4</y>
       <width>125</width>
-      <height>88</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
@@ -42,6 +42,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="1" column="0">
       <widget class="QPushButton" name="threadFormBackBtn">
        <property name="text">
@@ -77,7 +92,7 @@
       <x>140</x>
       <y>5</y>
       <width>125</width>
-      <height>88</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
@@ -87,6 +102,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="1" column="0">
       <widget class="QPushButton" name="threadSizeBackBtn">
        <property name="text">
@@ -122,7 +152,7 @@
       <x>275</x>
       <y>5</y>
       <width>125</width>
-      <height>88</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
@@ -132,6 +162,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="1" column="0">
       <widget class="QPushButton" name="threadClassBackBtn">
        <property name="text">
@@ -167,7 +212,7 @@
       <x>10</x>
       <y>100</y>
       <width>201</width>
-      <height>211</height>
+      <height>196</height>
      </rect>
     </property>
     <property name="title">
@@ -177,6 +222,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_4">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="3" column="1">
       <widget class="QLabel" name="maxMinorDiaLbl">
        <property name="maximumSize">
@@ -373,7 +433,7 @@
       <x>420</x>
       <y>5</y>
       <width>125</width>
-      <height>88</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
@@ -383,6 +443,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_5">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="1" column="0">
       <widget class="QPushButton" name="sptmSizeBackBtn">
        <property name="text">
@@ -428,6 +503,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_6">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="1" column="0">
       <widget class="QLabel" name="label_7">
        <property name="text">
@@ -606,6 +696,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_8">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="4" column="0">
       <widget class="QPushButton" name="drillSizeBackBtn">
        <property name="text">
@@ -706,7 +811,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>515</y>
+      <y>520</y>
       <width>96</width>
       <height>23</height>
      </rect>
@@ -719,7 +824,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>525</y>
+      <y>505</y>
       <width>166</width>
       <height>21</height>
      </rect>
@@ -737,8 +842,8 @@
    <widget class="QPushButton" name="testBackBtn">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>545</y>
+      <x>30</x>
+      <y>530</y>
       <width>36</width>
       <height>23</height>
      </rect>
@@ -750,8 +855,8 @@
    <widget class="QPushButton" name="testFwdBtn">
     <property name="geometry">
      <rect>
-      <x>265</x>
-      <y>545</y>
+      <x>160</x>
+      <y>525</y>
       <width>36</width>
       <height>23</height>
      </rect>
@@ -764,9 +869,9 @@
     <property name="geometry">
      <rect>
       <x>15</x>
-      <y>325</y>
+      <y>315</y>
       <width>196</width>
-      <height>191</height>
+      <height>186</height>
      </rect>
     </property>
     <property name="title">
@@ -776,6 +881,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_9">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="1" column="0">
       <widget class="QLabel" name="label_18">
        <property name="text">
@@ -825,7 +945,7 @@
      <item row="4" column="0">
       <widget class="QLabel" name="label_19">
        <property name="text">
-        <string>PDO Adj Out</string>
+        <string>MDO Adj Out</string>
        </property>
       </widget>
      </item>
@@ -858,14 +978,14 @@
      <item row="6" column="0">
       <widget class="QLabel" name="label_20">
        <property name="text">
-        <string>Final PDO</string>
+        <string>Final MDO</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label_21">
        <property name="text">
-        <string>PDO</string>
+        <string>MDO</string>
        </property>
       </widget>
      </item>
@@ -912,7 +1032,7 @@
      <item row="5" column="0">
       <widget class="QLabel" name="label_24">
        <property name="text">
-        <string>PDO Crest Adj</string>
+        <string>MDO Crest Adj</string>
        </property>
       </widget>
      </item>
@@ -922,9 +1042,9 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>330</y>
+      <y>345</y>
       <width>171</width>
-      <height>176</height>
+      <height>171</height>
      </rect>
     </property>
     <property name="title">
@@ -934,6 +1054,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_10">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="5" column="1">
       <widget class="QSpinBox" name="numPassesSP">
        <property name="minimum">
@@ -1142,8 +1277,8 @@
    <widget class="QPushButton" name="saveFilePb">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>515</y>
+      <x>335</x>
+      <y>520</y>
       <width>56</width>
       <height>23</height>
      </rect>
@@ -1155,10 +1290,10 @@
    <widget class="QGroupBox" name="gridGroupBox_8">
     <property name="geometry">
      <rect>
-      <x>225</x>
+      <x>320</x>
       <y>265</y>
-      <width>81</width>
-      <height>61</height>
+      <width>76</width>
+      <height>76</height>
      </rect>
     </property>
     <property name="title">
@@ -1168,6 +1303,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_11">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="0" column="0">
       <widget class="QSpinBox" name="threadCountSb">
        <property name="minimum">
@@ -1178,24 +1328,49 @@
        </property>
       </widget>
      </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="threadsHeight">
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QGroupBox" name="gridGroupBox_9">
     <property name="geometry">
      <rect>
       <x>225</x>
-      <y>105</y>
+      <y>100</y>
       <width>106</width>
-      <height>86</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
-     <string>Hole Dia</string>
+     <string>Minor Dia</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_12">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="0" column="0">
       <widget class="QDoubleSpinBox" name="holeDiaSb">
        <property name="decimals">
@@ -1222,9 +1397,9 @@
     <property name="geometry">
      <rect>
       <x>225</x>
-      <y>190</y>
+      <y>185</y>
       <width>106</width>
-      <height>66</height>
+      <height>56</height>
      </rect>
     </property>
     <property name="title">
@@ -1234,6 +1409,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_13">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="0" column="0">
       <widget class="QDoubleSpinBox" name="pitchDiaSb">
        <property name="decimals">
@@ -1252,7 +1442,7 @@
       <x>560</x>
       <y>5</y>
       <width>146</width>
-      <height>88</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
@@ -1262,6 +1452,21 @@
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_7">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
      <item row="0" column="1">
       <widget class="QLabel" name="circularFeedLbl">
        <property name="frameShape">
@@ -1289,6 +1494,90 @@
       <widget class="QLabel" name="label_28">
        <property name="text">
         <string>Circular</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="gridGroupBox_11">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>245</y>
+      <width>86</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>XY, Z Start</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_14">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_31">
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="xCoord">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_32">
+       <property name="text">
+        <string>Y</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="yCoord">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_33">
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="zStart">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>

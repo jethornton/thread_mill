@@ -32,6 +32,8 @@ class MyMainWindow(VCPMainWindow):
         self.holeDiaSb.valueChanged.connect(self.holeDiaCalc)
         self.linearFeedSb.valueChanged.connect(self.linearFeedCalc)
         self.genGcodeBtn.clicked.connect(self.genGcode)
+        self.threadCountSb.valueChanged.connect(self.threadHeightCalc)
+
 
         self.testFwdBtn.clicked.connect(self.testFwd)
         self.testBackBtn.clicked.connect(self.testBack)
@@ -129,6 +131,7 @@ class MyMainWindow(VCPMainWindow):
         self.drillSizeInit()
         self.threadSizeCalc()
         self.numPassesCalc()
+        self.threadHeightCalc()
 
     def threadSizeFwd(self):
         if self.sizeMapper.currentIndex() != self.sizeLast:
@@ -138,6 +141,7 @@ class MyMainWindow(VCPMainWindow):
         self.drillSizeInit()
         self.threadSizeCalc()
         self.numPassesCalc()
+        self.threadHeightCalc()
 
     def threadSizeBack(self):
         if self.sizeMapper.currentIndex() != 0:
@@ -147,6 +151,7 @@ class MyMainWindow(VCPMainWindow):
         self.drillSizeInit()
         self.threadSizeCalc()
         self.numPassesCalc()
+        self.threadHeightCalc()
 
     def threadSizeCalc(self):
         # PDO calculations
@@ -179,7 +184,6 @@ class MyMainWindow(VCPMainWindow):
         threadPitch = 1.0 / threadTPI
         maxDepth = float(self.sptmMaxDepthLbl.text())
         maxThreads = int(maxDepth / threadPitch)
-        self.threadCountSb.setMaximum(maxThreads)
 
     def sptmSizeInit(self):
         self.sptmMapper = QDataWidgetMapper(self)
@@ -195,7 +199,6 @@ class MyMainWindow(VCPMainWindow):
         self.sptmMapper.toLast()
         self.sptmLast = self.sptmMapper.currentIndex()
         self.sptmMapper.toFirst()
-        #self.sptmCalc()
 
     def sptmSizeFwd(self):
         if self.sptmMapper.currentIndex() != self.sptmLast:
@@ -273,6 +276,11 @@ class MyMainWindow(VCPMainWindow):
         threadEngagement = ((majorDia - minorDia) * threadPitch) / 0.01299
         self.threadPercentLbl.setText('{:.0f}%'.format(threadEngagement))
 
+    def threadHeightCalc(self):
+        pitch = 1.0 / float(self.threadTPILbl.text())
+        height = self.threadCountSb.value() * pitch
+        self.threadsHeight.setText('{:.4f}"'.format(height))
+
     def numPassesCalc(self):
         majorDia = float(self.threadMajorDiaLbl.text())
         minorDia = float(self.holeDiaSb.value())
@@ -340,8 +348,16 @@ class MyMainWindow(VCPMainWindow):
     def genGcode(self):
         # make sure your using the hole size as the starting point
         self.gcodeText.setPlainText("; JT's Thread Mill Wizard")
+        self.gcodeText.append('; Thread {}'.format(self.threadSizeLbl.text()))
         self.gcodeText.append('F25')
-        self.gcodeText.append('G0 X2 Y2 Z0')
+        xCoord = self.xCoord.text()
+        yCoord = self.yCoord.text()
+        self.gcodeText.append('G0 X{} Y{} Z0.125'.format(xCoord, yCoord))
+        zStart = self.zStart.text()
+        pitch = 1.0 / float(self.threadTPILbl.text())
+        threadsHeight = (self.threadCountSb.value() + 1) * pitch
+        zEnd = float(zStart) + threadsHeight
+        self.gcodeText.append('G1 Z{}'.format(zEnd))
         self.gcodeText.append('G91')
         self.gcodeText.append('; Number of thread passes {}' \
             .format(self.numPassesSP.value()))
@@ -350,8 +366,7 @@ class MyMainWindow(VCPMainWindow):
             # go to hole bottom
             threadTPI = float(self.threadTPILbl.text())
             threadPitch = 1.0 / threadTPI
-            threadBottom = -(threadPitch * (self.threadCountSb.value() + 1))
-            self.gcodeText.append('G0 Z{}'.format(threadBottom))
+            self.gcodeText.append('G0 Z-{}'.format(threadsHeight))
             # go to start of lead in arc
             cutterClearance = 0.020
             minorDia = float(self.holeDiaSb.value())
